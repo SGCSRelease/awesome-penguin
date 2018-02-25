@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+	background-color: #181818;
+	font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 200;
+	color: #FFF;
+}
+
+.top {
+	position: absolute;
+	width: 100%;
+	text-align: right;
+}
+
+.top-button {
+	display: inline-block;
+	font-size: 20px;
+    margin: 64px 36px;
+}
+
+.content-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.button {
+	background-color: #F60;
+	margin-top: 72px;
+	border-radius: 8px;
+	width: 240px;
+	height: 72px;
+	color: #FFF;
+	border: none;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.content {
+	top: 50%;
+	width: 100%;
+	position: absolute;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.background {
+	position: absolute;
+    z-index: -1;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+    width: 100%;
+	height: 100%;
+}
+
+.arii-logo {
+	display: block;
+	margin: auto;
+	width: 32px;
+	pointer-events: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.arii-title {
+	color: #FF6000;
+	font-size: 48px;
+	margin-top: 24px;
+	font-weight: 900;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.arii-text {
+	color: #FFF;
+	font-size: 28px;
+	line-height: 1.5;
+	margin-top: 40px;
+}
+
+.bottom-container {
+	position: relative;
+    margin: 0 25% 108px;
+}
+.header {
+	color: #FF6000;
+	font-size: 44px;
+	line-height: 1.5;
+	margin-top: 144px;
+	font-weight: bold;
+}
+
+.dev-text {
+	color: #FFF;
+	font-size: 24px;
+	line-height: 1.5;
+	margin-top: 48px;
+}
+
+.dev-text:first-of-type {
+	margin-top: 48px;
+}
+
+.comment-number {
+	color: #FF6000;
+	margin-right: 12px;
+
+}
+.comment {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-top: 30px;
+}
+
+.comment:first-of-type {
+	margin-top: 48px;
+}
+
+.form {
+	font-size: 30px;
+	line-height: 1.5;
+	margin-top: 30px;
+	font-weight: 600;
+	background: none;
+	border: none;
+    color: #FFF;
+}

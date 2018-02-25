@@ -1,0 +1,50 @@
+{% load static %}
+
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main/reset.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'css/arii/index.css' %}" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="content-container">
+        <div class="background">
+            <img class="background" src="{% static 'img/arii/background.jpg' %}" />
+        </div>
+		<div class="content">
+			<img class="arii-logo" src="{% static 'img/arii/arii-logo.png' %}" />
+			<h1 class="arii-title">arii</h1>
+            <p class="arii-text">동아리 관리가 힘들었다.<br/>그래서 앱을 만들거다. 아리.</p>
+            <button class="button" onclick="window.scrollTo(0, 1000)">개발 훈수 두기</button>
+		</div>
+        <div class="top">
+            <div class="top-button">
+                개발자 이야기
+            </div>
+            <div class="top-button">
+                또 뭐있지
+            </div>
+            <div class="top-button">
+                네이버 사랑해요
+            </div>
+        </div>
+	</div>
+    <div class="bottom-container">
+        <h2 class="header">
+            개발 훈수 두기
+        </h2>
+        <p class="dev-text">
+            개발자 왈) 앱을 만들기 전에 다른 동아리 임원진들은 어떤 어려움을 겪는지, 또 부원들은 임원진에게 어떤 불만이 있는지 알고 싶어요! 그래야 의미있는 동아리 앱을 만들죠!
+        </p>
+        <p class="dev-text">
+            임원이나 부원으로서 털어내고 싶은 불만이 있거나 앱에 어떤 기능이 들어갔으면 한다 하는 바램이 있으면 맘껏 얘기해주세요!
+        </p>
+        <form name='comment' action="{% url 'arii-submit' %}" method="POST">
+            {% csrf_token %}
+            <input class="form" type="text" name="comment" id="comment" placeholder="여기다 맘껏 입력해주세요!" />
+        {% for post in posts %}
+            <p class="comment"><span class="comment-number">{{  forloop.counter }}</span>{{ post.string }}</p>
+        {% endfor %}
+    </div>
+	</form>
+</body>

@@ -1,0 +1,31 @@
+{% extends 'release/base.html' %}
+{% load static %}
+
+{%  block head %}
+<link rel="stylesheet" type="text/css" href="{%  static 'release/css/style.css' %}" />
+{%  endblock %}
+
+
+{% block content %}
+<div class="hero container">
+	<div class="hero row align-items-center justify-content-center">
+		<div class="hero col">
+			<img class="hero-logo" src="{% static 'release/img/logo.png' %}" />
+			<h1 class="hero-name">Release</h1>
+			<h2 class="hero-copy">"컴공까지 왔는데</br>진짜 하고 싶은걸 해봐야지."</h2>
+			<div class="hero-buttons row justify-content-center">
+				<div class="hero-buttons col-8 col-md-6 col-lg-4 col-xl-3">
+					<a href="{% url 'release:recruiting' %}" class="hero-recruitingButton">신입 모집 안내</a>
+				<a href="{% url 'release:about' %}" class="hero-aboutButton">학회 소개</a>
+				</div>
+			</div>
+			<div class="sns-row row justify-content-center">
+				<a href="https://www.facebook.com/SGRelease/"><img class="sns-icon" src="{% static 'release/img/facebook.png' %}" /></a>
+				<a href="mailto:sogangrelease@gmail.com"><img class="sns-icon" src="{% static 'release/img/mail.png' %}" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="copyright">Copyright © 2018 Sogang Release. All rights reserved.</div>
+{% endblock %}

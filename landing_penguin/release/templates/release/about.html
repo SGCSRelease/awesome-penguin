@@ -1,0 +1,40 @@
+{% extends 'release/base.html' %}
+{% load static %}
+
+{%  block head %}
+<link rel="stylesheet" type="text/css" href="{%  static 'release/css/style.css' %}" />
+{%  endblock %}
+
+
+{% block content %}
+<div class="text container">
+	<div class="text row justify-content-center">
+		<div class="text col-10 col-md-8">
+			<h1 class="text-header">릴리즈는?</h1>
+			<p class="text-content">Release는 학교 공부 외에 자기가 정말 하고 싶은 뭔가를 해보자는 목적으로 설립된 학회입니다.</p>
+			<p class="text-content">학회원끼리 정기적으로 <Release Day> 세미나 행사를 열어 자신이 공부하는 내용이나 진행중인 프로젝트 등을 공유하고, Release 내에서 팀을 꾸려 스터디 또는 프로젝트를 진행하기도 합니다.</p>
+			<p class="text-content">초급자를 위한 C세미나, 선배님 초청 세미나, 기업 스폰서 해커톤 등 기타 활동도 활발하게 이루어지고 있습니다.</p>
+			<h1 class="text-header">2017년 주요 활동</h1>
+			<p class="text-content text-content--list">- Release Day: 정기 세미나 행사</p>
+			<p class="text-content text-content--list">- [Naver D2] Release World: 대규모 세미나 행사</p>
+			<p class="text-content text-content--list">- Google PM 재직 선배님 댁 방문 세미나</p>
+			<p class="text-content text-content--list">- IEEE 밤샘 코딩 대회 w/ ACM-ICPC (100위권 2팀)</p>
+			<p class="text-content text-content--list">- [MS Student Partners] AI WINTER</p>
+			<p class="text-content text-content--list">- [MS Student Partners] MASTERING GOMOKU</p>
+			<p class="text-content text-content--list">- Arii: 동아리 관리 서비스 프로젝트 WEB + APP</p>
+			<p class="text-content text-content--list">- 코딩 인터뷰 스터디</p>
+			<h1 class="text-header">영상: Release World 2017</h1>
+			<iframe class="text-video" src="https://www.youtube.com/embed/2pWFD1JJlWo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<h1 class="text-header">IMAGES</h1>
+			<img class="text-image" src="{% static 'release/img/image-0.jpg' %}" />
+			<img class="text-image" src="{% static 'release/img/image-1.jpg' %}" />
+			<img class="text-image" src="{% static 'release/img/image-2.jpg' %}" />
+			<img class="text-image" src="{% static 'release/img/image-3.jpg' %}" />
+			<img class="text-image" src="{% static 'release/img/image-4.jpg' %}" />
+			<img class="text-image" src="{% static 'release/img/image-5.jpg' %}" />
+			<h1 class="text-header">연락처</h1>
+			<p class="text-content">학회장 16학번 허남규: 010-3307-8419</p>
+		</div>
+	</div>
+</div>
+{% endblock %}

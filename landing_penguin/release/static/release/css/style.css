@@ -1,0 +1,229 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #FFF;
+	background-color: #111;
+}
+
+.background-container--innerMargin {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	position: fixed;
+	top: -100vh;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.background-container--outerMargin {
+	margin-top: calc(100vh + 192px);
+}
+
+.background-image {
+	margin-top: calc(200vh - 56.25vw);
+	width: 100%;
+	height: 56.25vw;
+	background: url("/static/release/img/background.png");
+	background-size: contain;
+}
+
+.hero.row {
+	text-align: center;
+	height: 88vh;
+}
+
+.hero-logo {
+	margin-top: 96px;
+	width: 20px;
+	height: auto;
+}
+
+.hero-name {
+	font-size: 24px;
+	margin-top: 8px;
+	font-weight: 700;
+}
+
+.hero-copy {
+	font-size: 20px;
+	font-style: italic;
+	margin-top: 24px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.hero-recruitingButton {
+	font-size: 14px;
+	margin-top: 48px;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 4px;
+	color: #111;
+	background-color: #FFB900;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	display: block;
+}
+
+.hero-recruitingButton:hover {
+	color: #111;
+	background-color: #EFA900;
+	text-decoration: none;
+}
+
+.hero-aboutButton {
+	font-size: 14px;
+	margin-top: 8px;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 4px;
+	color: #FFB900;
+	background-color: rgba(0,0,0,0);
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #FFB900;
+	display: block;
+}
+
+.hero-aboutButton:hover {
+	background-color: #FFB900;
+	text-decoration: none;
+	color: #111;
+}
+
+.sns-row {
+	margin-top: 72px;
+}
+
+.sns-icon {
+	width: 28px;
+	height: 28px;
+	margin: 12px;
+}
+
+.text-header {
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 32px;
+}
+
+.text-header:first-of-type {
+	margin-top: 84px;
+}
+
+.text-header + .text-content {
+	margin-top: 16px;
+}
+
+.text.container {
+	margin-bottom: 72px;
+}
+
+.text-content {
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+.text-content--list {
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+.text-video {
+	margin-top: 8px;
+	width: 100%;
+}
+
+.text-image {
+	margin-top: 8px;
+	width: 49%;
+	height: auto;
+	pointer-events: none;
+}
+
+
+.copyright {
+	font-size: 10px;
+	font-weight: 300;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	bottom: 8px;
+}
+
+@media (min-width: 768px) {
+
+	.hero-logo {
+		width: 28px;
+	}
+
+	.hero-name {
+		font-size: 32px;
+		margin-top: 8px;
+	}
+
+	.hero-copy {
+		font-size: 24px;
+		margin-top: 36px;
+		font-weight: 200;
+	}
+
+	.hero-recruitingButton {
+		font-size: 16px;
+		margin-top: 56px;
+		width: 100%;
+		padding: 20px 0;
+		border-radius: 6px;
+	}
+
+	.hero-aboutButton {
+		font-size: 16px;
+		margin-top: 10px;
+		padding: 20px 0;
+		border-radius: 6px;
+	}
+
+	.copyright {
+		font-weight: 200;
+		font-size: 12px;
+	}
+
+	.text-header {
+		font-size: 24px;
+		font-weight: 700;
+		margin-top: 40px;
+	}
+
+	.text-header:first-of-type {
+		margin-top: 112px;
+	}
+
+	.text-header + .text-content {
+		margin-top: 24px;
+	}
+
+	.text.container {
+		margin-bottom: 112px;
+	}
+
+	.text-content {
+		font-size: 18px;;
+		font-weight: 300;
+		margin-top: 12px;
+		margin-bottom: 0px;
+	}
+
+	.text-content--list {
+		margin-top: 6px;
+	}
+}
