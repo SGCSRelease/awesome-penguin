@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +24,7 @@ DEBUG = True
 
 # Hiding the secret key seems like over-engineering at this point
 # of the project
-SECRET_KEY = ^j=1z877hw_$kc2ynn_@a(t)7tczl=2-j%0n^c46^@1bwk*h_w
+SECRET_KEY = '^j=1z877hw_$kc2ynn_@a(t)7tczl=2-j%0n^c46^@1bwk*h_w'
 
 ALLOWED_HOSTS = ['*']
 
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'landing_penguin.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'landing_penguin.wsgi.application'
+WSGI_APPLICATION = 'application'
 
 
 # Database
