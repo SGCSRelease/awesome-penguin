@@ -19,16 +19,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-secret_path = os.path.join(BASE_DIR, "secret.txt")
-if os.path.isfile(secret_path):
-    with open(secret_path, 'r') as f:
-        SECRET_KEY = f.read().strip(" \n")
-    else:
-        raise ImproperlyConfigured("Make sure to put secret.txt in BASE_DIR")
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+# Hiding the secret key seems like over-engineering at this point
+# of the project
+SECRET_KEY = ^j=1z877hw_$kc2ynn_@a(t)7tczl=2-j%0n^c46^@1bwk*h_w
 
 ALLOWED_HOSTS = ['*']
 
