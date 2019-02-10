@@ -1,5 +1,5 @@
-# Venv
-venv/
+venv
+db.sqlite3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
